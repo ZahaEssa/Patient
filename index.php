@@ -1,6 +1,5 @@
 <?php
 require_once "connections/connect.php";
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +8,6 @@ require_once "connections/connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Patient Identifying Information Form</title>
-    <style>
-      
-    </style>
 </head>
 <body>
 <form action="processes/registration.php" method="POST" autocomplete="off">
@@ -30,8 +26,8 @@ require_once "connections/connect.php";
     <div class="form-group">
         <h2>Gender</h2>
         <div class="radio-group">
-            <label><input type="radio" name="gender" value="male"> Male</label>
-            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
         </div>
     </div>
 
@@ -46,15 +42,13 @@ require_once "connections/connect.php";
     <label for="dob-day">Day</label>
     <input type="number" id="dob-day" name="dob-day" class="form-input" placeholder="DD" min="1" max="31" step="1">
 </div>
-
-
     <div class="form-group">
         <h2>Age</h2>
         <label for="age">Age</label>
         <input type="number" id="age" name="age" class="form-input" min="0">
         <div class="radio-group">
-            <label><input type="radio" name="age-type" value="years"> Years</label>
-            <label><input type="radio" name="age-type" value="months"> Months</label>
+            <label><input type="radio" name="age-type" value="Y"> Years</label>
+            <label><input type="radio" name="age-type" value="M"> Months</label>
         </div>
     </div>
 

@@ -1,48 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 h2 {
     color: #333;
+    font-size: 1.5em;
     margin-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+form {
+    max-width: 600px; 
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .form-input {
-    width: 30%;
-    padding: 8px;
+    width: calc(100% - 20px);
+    padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
-.radio-group, .checkbox-group {
-    margin-bottom: 15px;
-}
-
-.form-group {
+.radio-group,
+.checkbox-group {
     margin-bottom: 20px;
 }
 
-.button-submit{
-    width:300px;
-    height:50px;
-   background-color:greenyellow;
-   border-radius: 4px;
-   font-size: 20px;
+.form-group {
+    margin-bottom: 25px;
 }
 
-.button-submit:hover{
-    background-color: aquamarine;
+.button-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-submit:hover {
+    background-color: #45a049;
 }
