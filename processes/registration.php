@@ -48,10 +48,10 @@ if (isset($_POST["submit"])) {
         $race = $_POST["race"];
         $raceOther = $_POST["race-other"];
         $hispanicLatino = $_POST["hispanic-latino"];
-
+       
         
         $stmtPatient = $con->prepare("INSERT INTO PatientInfo (last_name, first_name, middle_initial, gender, dob_year, dob_month, dob_day, age, age_type, race, race_other, hispanic_latino, facility_id, present_facility_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        if (!$stmtPatient->bind_param("ssssiiisisssii", 
+        if (!$stmtPatient->bind_param("ssssiiisssssii", 
             $lastName, $firstName, $middleInitial, $gender, $dobYear, $dobMonth, $dobDay, 
             $age, $ageType, $race, $raceOther, $hispanicLatino, $facilityId, $presentFacilityId
         )) {

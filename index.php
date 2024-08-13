@@ -47,8 +47,8 @@ require_once "connections/connect.php";
         <label for="age">Age</label>
         <input type="number" id="age" name="age" class="form-input" min="0">
         <div class="radio-group">
-            <label><input type="radio" name="age-type" value="Y"> Years</label>
-            <label><input type="radio" name="age-type" value="M"> Months</label>
+            <label><input type="radio" name="age-type" value="Years"> Years</label>
+            <label><input type="radio" name="age-type" value="Months"> Months</label>
         </div>
     </div>
 

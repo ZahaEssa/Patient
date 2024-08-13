@@ -11,7 +11,7 @@ CREATE TABLE PatientInfo (
     dob_month INT NOT NULL,
     dob_day INT NOT NULL,
     age INT NOT NULL,
-    age_type VARCHAR (6) NOT NULL,
+    age_type VARCHAR (10) NOT NULL,
    race ENUM('White', 'Black', 'Asian/Pacific Islander', 'Unknown', 'Other') NOT NULL,
     race_other VARCHAR(100),
     hispanic_latino ENUM('Yes', 'No', 'Unknown') NOT NULL,
@@ -20,6 +20,8 @@ CREATE TABLE PatientInfo (
     FOREIGN KEY (facility_id) REFERENCES facility(id),
     FOREIGN KEY (present_facility_id) REFERENCES presentfacility(id)
 );
+ALTER TABLE PatientInfo
+MODIFY age_type ENUM('Years', 'Months') NOT NULL;
 select * from PatientInfo;
 
 CREATE TABLE facility (
@@ -45,6 +47,7 @@ select * from presentfacility;
 
 
 
-SHOW COLUMNS FROM PatientInfo WHERE Field = 'age_type';
+
+
 
 
